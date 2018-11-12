@@ -1,0 +1,5 @@
+{
+  "greeting": "Hola ${name}!",
+  "title": "My Article title ES",
+  "login": "Login"
+}

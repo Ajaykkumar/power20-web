@@ -1,0 +1,20 @@
+/* inject:scss */
+@import '../../_theme2.scss';
+/* endinject */
+
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  margin-top: 60px;
+  position: relative;
+}
+
+svg.backdrop {
+  width: 100%;
+  margin-top: -50px;
+  position: fixed;
+  path {
+    fill: $primaryColor;
+  }
+}
