@@ -4,7 +4,6 @@
 
 // Global Bootstrap overrides START
 body {
-  background-color: $appBackgroundColor;
   color: $primaryTextColor;
 }
 
@@ -34,7 +33,7 @@ label{
 }
 
 .navbar-container .navbar .dropdown-toggle {
-  color: $contrastTextColour;
+  color: $primaryColor;
 }
 
 .dropdown-menu {

@@ -3,16 +3,17 @@
 /* endinject */
 
 .login-container {
-  background: linear-gradient(-60deg, $primaryColor-130, $primaryColor);
+  background: $primaryColor;
   width: 100%;
   height: 100vh;
   display: flex;
 
   .shadow-container {
-    width: 100%;
-    margin: 100px 20%;
+    width: 30%;
+    margin: 100px 35%;
     display: table;
     height: calc(100vh - 200px);
+    border-radius: 15px;
 
     .head {
       position: absolute;
@@ -47,6 +48,11 @@
           font-weight: bold;
           padding: 1rem;
           transition: all 0.2s;
+          border-color: $hower-color;
+          color: #777;
+          &:hover {
+            background-color: $hower-color;
+          }
         }
 
         .error-text {

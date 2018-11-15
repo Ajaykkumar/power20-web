@@ -1,15 +1,14 @@
 
 // import Axios from 'axios';
 import * as React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Grid, Row, Thumbnail } from 'react-bootstrap';
 // import { Plus as PlusIcon } from 'react-feather';
 // import EditGridModal from '../../components/DataGrid/EditGridModal';
 
 // import { Button } from 'react-bootstrap/lib/InputGroup';
+import a from '../../assets/img/a.png';
 import trash from '../../assets/img/delete.svg';
-import edit from '../../assets/img/edit.svg';
-import json from '../../assets/img/json.svg';
-import './workouts.css';
+import './workoutFrames.css';
 
 interface IReactFormState {
   data: object[];
@@ -19,7 +18,7 @@ interface IReactFormState {
   schema: any;
 }
 
-class Workouts extends React.PureComponent<IReactFormState> {
+class WorkoutFrames extends React.PureComponent<IReactFormState> {
   public state: IReactFormState;
 
   constructor(props: any) {
@@ -62,15 +61,14 @@ class Workouts extends React.PureComponent<IReactFormState> {
     const { data } = this.state;
     return (
         <div className="salesForm container-fluid">
-          <div className="panel panel-default col-md-4 mt-10 p-0 mr-5">
+          <div className="panel panel-default col-md-3 mt-10 p-0 mr-5">
               <div className="panel-heading">
-              <h4>Workouts</h4></div>
+              <h4>Workout Frames</h4></div>
               <table className="table table-bordered">
                 <thead>
                   <tr>
-                    <th>STAGE NAME</th>
-                    <th>NO. OF WORKOUTS</th>
-                    <th>ACTIONS</th>
+                    <th>DEVICE SIZE</th>
+                    <th>NO. OF FILES</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -78,12 +76,6 @@ class Workouts extends React.PureComponent<IReactFormState> {
                     <tr key={item.id}>
                       <td>{item.name}</td>
                       <td>{item.batchNo}</td>
-                      <td>
-                      <div className="center">
-                          <img className="action" src={edit} />
-                          <img className="action" src={trash} />
-                        </div>
-                      </td>
                     </tr>
                   )) : <tr>
                       <td colSpan={24} className="noDataFound"><div>No data available</div></td>
@@ -92,48 +84,71 @@ class Workouts extends React.PureComponent<IReactFormState> {
               </table>
           </div>
 
-          <div className="panel panel-default col-md-7 mt-10 p-0">
-                  <div className="panel-heading">
-                    <h4>Conceiving workouts
-
-                    </h4>
-                    <span className="float-right">
-                      <Button bsStyle="green">
-                        +Create workout
-                      </Button>
-                    </span>
-                  </div>
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>WORKOUTS</th>
-                    <th>STATUS</th>
-                    <th>SIMULATOR</th>
-                    <th>ACTIONS</th>
-                    <th>UNPUBLISH</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.length > 0 ? data.map((item: any) => (
-                    <tr key={item.name}>
-                      <td>{item.name}</td>
-                      <td>{item.status}</td>
-                      <td>{item.simulator}</td>
-                      <td>
-                        <div className="center">
-                          <img className="action" src={json} />
-                          <img className="action" src={edit} />
-                          <img className="action" src={trash} />
-                        </div>
-                      </td>
-                      <td><button className="btn btn-default">UnPublish</button></td>
-                    </tr>
-                  )) : <tr>
-                      <td colSpan={24} className="noDataFound"><div>No data available</div></td>
-                    </tr>}
-                </tbody>
-              </table>
+          <div className="panel panel-default col-md-8 mt-10 p-0">
+            <div className="panel-heading">
+              <h4>Idpi
+              </h4>
+              <span className="float-right">
+                <Button bsStyle="green">
+                  +Upload Assests
+                </Button>
+              </span>
             </div>
+            <Grid bsClass="grid">
+              <Row >
+                <Col md={2}>
+                  <Thumbnail src={a} alt="242x200">
+                    <h5>Thumbnail label</h5>
+                    <p>
+                      32kb
+                      &nbsp;
+                      <img className="action float-right" src={trash} />
+                    </p>
+                  </Thumbnail>
+                </Col>
+                <Col md={2}>
+                  <Thumbnail src={a} alt="242x200">
+                    <h5>Thumbnail label</h5>
+                    <p>
+                      32kb
+                      &nbsp;
+                      <img className="action float-right" src={trash} />
+                    </p>
+                  </Thumbnail>
+                </Col>
+                <Col md={2}>
+                  <Thumbnail src={a} alt="242x200">
+                    <h5>Thumbnail label</h5>
+                    <p>
+                      32kb
+                      &nbsp;
+                      <img className="action float-right" src={trash} />
+                    </p>
+                  </Thumbnail>
+                </Col>
+                <Col md={2}>
+                  <Thumbnail src={a} alt="242x200">
+                    <h5>Thumbnail label</h5>
+                    <p>
+                      32kb
+                      &nbsp;
+                      <img className="action float-right" src={trash} />
+                    </p>
+                  </Thumbnail>
+                </Col>
+                <Col md={2}>
+                  <Thumbnail src={a} alt="242x200">
+                    <h5>Thumbnail label</h5>
+                    <p>
+                      32kb
+                      &nbsp;
+                      <img className="action float-right" src={trash} />
+                    </p>
+                  </Thumbnail>
+                </Col>
+              </Row>
+            </Grid>
+          </div>
         </div>
     );
   }
@@ -164,4 +179,4 @@ class Workouts extends React.PureComponent<IReactFormState> {
 //   withLocalize
 // )(Workouts);
 
-export default Workouts;
+export default WorkoutFrames;

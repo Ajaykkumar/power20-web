@@ -14,22 +14,21 @@
   z-index: 1;
   top: 45px;
   left: 0;
-  background-color: transparent;
-  overflow-x: hidden;
+  background-color: $primaryColor;
   padding-top: 16px;
   a {
-    padding: 6px 8px 6px 16px;
+    padding: 10px 8px 10px 16px;
     text-decoration: none;
     display: block;
     border-left: 4px solid transparent;
-    color: $primaryTextColor;
+    color: $white;
     &:hover {
-      color: $primaryColor;
+      color: $hower-color;
     }
   
     &.active {
-      color: $primaryColor;
-      border-left: 4px solid $primaryColor;
+      color: $hower-color;
+      border-left: 4px solid $hower-color;
     }
   }
 }

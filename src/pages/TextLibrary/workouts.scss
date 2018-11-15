@@ -3,14 +3,17 @@
   margin-right: 30px;
 }
 
-.btn-green {
+.float-right {
+  float: right;
+  margin-right: 15px;
+}
+
+.green {
   background-color: #0FAA47 !important;
 }
 
 .panel-heading {
   background-color: #fff !important;
-  display: flex;
-  justify-content: space-between;
 }
 
 td {

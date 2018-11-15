@@ -3,8 +3,36 @@
   margin-right: 30px;
 }
 
+.float-right {
+  float: right;
+  margin-right: 10px;
+}
+.thumbnail {
+  >img {
+    width: 154px !important;
+  }
+  .caption {
+    padding: 0 9px !important;
+  }
+}
+
+.grid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  .col-md-2 {
+    margin: 10px;
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+  }
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .btn-green {
   background-color: #0FAA47 !important;
+  margin-top: 4px;
 }
 
 .panel-heading {
@@ -61,26 +89,6 @@ img {
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+.frame {
+  border: 1px solid #ddd;
 }

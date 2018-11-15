@@ -1,7 +1,7 @@
 
 // import Axios from 'axios';
 import * as React from 'react';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 // import { Plus as PlusIcon } from 'react-feather';
 // import EditGridModal from '../../components/DataGrid/EditGridModal';
 
@@ -95,13 +95,12 @@ class Workouts extends React.PureComponent<IReactFormState> {
           <div className="panel panel-default col-md-7 mt-10 p-0">
                   <div className="panel-heading">
                     <h4>Conceiving workouts
-
-                    </h4>
                     <span className="float-right">
-                      <Button bsStyle="green">
+                      <button className="btn btn-default green">
                         +Create workout
-                      </Button>
+                      </button>
                     </span>
+                    </h4>
                   </div>
               <table className="table table-bordered">
                 <thead>
